@@ -3,7 +3,8 @@ import logoXboxIMG from  '../../assets/images/logo-xbox.svg';
 
 export function Header(){
     return(
-        <footer>
+        
+        <header>
             <img src={logoXboxIMG} alt="Logo xbox" />
             <nav>
                 <a href="">VISÃO GERAL</a>
@@ -12,6 +13,6 @@ export function Header(){
                 <a href="">UNBOX</a>
             </nav>
             <button>VER DISPONIBILIDADE</button>
-        </footer>
+        </header>
     )
 }

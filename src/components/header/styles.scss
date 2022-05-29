@@ -1,16 +1,18 @@
-footer {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    font-size: 1rem;
+
     height: 5rem;
-    max-width: 1120px;
+    max-width: 1280px;
 
     margin: 0 auto;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
 
     a {
-
+        margin-left: 2.5rem;
         & + a {
             margin-left: 1.5rem;
         }
