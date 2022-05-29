@@ -1,6 +1,7 @@
 import './styles.scss';
 import xboxImg from '../../assets/images/xbox.png';
 import luzVerdeImg from '../../assets/images/luz-verde.svg';
+import controleImg from '../../assets/images/controle-xbox.png';
 
 import { Header } from '../../components/header';
 
@@ -27,6 +28,7 @@ export function Home(){
                         O controle sem fio Xbox traz um design elegante, conforto refinado e compartilhamento instantâneo para um favorito comum.
                         </p>
                     </div>
+                    <img src={controleImg} alt="Controle Xbox" />
                 </section>
 
 
