@@ -2,6 +2,10 @@ import './styles.scss';
 import xboxImg from '../../assets/images/xbox.png';
 import luzVerdeImg from '../../assets/images/luz-verde.svg';
 import controleImg from '../../assets/images/controle-xbox.png';
+import farcryImg from '../../assets/images/farcry.png';
+import forzaImg from '../../assets/images/forza.png';
+import fifaImg from '../../assets/images/fifa.png';
+import minecraftImg from '../../assets/images/minecraft.png';
 
 import { Header } from '../../components/header';
 
@@ -31,7 +35,12 @@ export function Home(){
                     <img src={controleImg} alt="Controle Xbox" />
                 </section>
 
-
+                <section className="sectionImages">
+                    <img src={farcryImg} alt="Imagem Farcry" />
+                    <img src={forzaImg} alt="Forza" />
+                    <img src={fifaImg} alt="Fifa" />
+                    <img src={minecraftImg} alt="Minecraft" />
+                </section>
             </body>
         </>
     );
