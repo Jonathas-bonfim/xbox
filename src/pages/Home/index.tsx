@@ -6,6 +6,8 @@ import farcryImg from '../../assets/images/farcry.png';
 import forzaImg from '../../assets/images/forza.png';
 import fifaImg from '../../assets/images/fifa.png';
 import minecraftImg from '../../assets/images/minecraft.png';
+import arrowImg from '../../assets/images/arrow.png';
+import arrowActiveImg from '../../assets/images/arrow-active.png';
 
 import { Header } from '../../components/header';
 
@@ -46,6 +48,9 @@ export function Home() {
                     <h1 className="title">Perguntas <span>frequentes</span></h1>
                     <div>
                         <h3>Meus jogos anteriores do Xbox vão funcionar no Xbox séries X?</h3>
+                        <a href={arrowImg}>
+                            <img src={arrowImg} alt="Arrow" />
+                        </a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div>

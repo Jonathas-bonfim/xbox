@@ -96,7 +96,18 @@ body {
             width: 100%;
             border-bottom: 1px solid var(--gray-light);
             margin-bottom: 3rem;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 20px;
+                    height: 10px;
+                }
+            }
           h3 {
+            display: inline-block;
             margin-bottom: 1.5rem;
           } 
           p {
