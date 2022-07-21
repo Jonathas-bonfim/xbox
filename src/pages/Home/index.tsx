@@ -45,20 +45,32 @@ export function Home() {
                 </section>
 
                 <section className="questions">
-                    <h1 className="title">Perguntas <span>frequentes</span></h1>
-                    <div>
-                        <h3>Meus jogos anteriores do Xbox vão funcionar no Xbox séries X?</h3>
-                        <a href={arrowImg}>
-                            <img src={arrowImg} alt="Arrow" />
-                        </a>
+                    <h1>Perguntas <span>frequentes</span></h1>
+                    <div className="query">
+                        <div className="title">
+                            <h3>Meus jogos anteriores do Xbox vão funcionar no Xbox séries X?</h3>
+                            <a href={arrowImg}>
+                                <img src={arrowImg} alt="Arrow" />
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit1.</p>
+                    </div>
+                    <div className="query">
+                        <div className="title">
+                            <h3>O que está incluído no Xbox series x?</h3>
+                            <a href={arrowImg}>
+                                <img src={arrowImg} alt="Arrow" />
+                            </a>
+                        </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div>
-                        <h3>O que está incluído no Xbox series x?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div>
-                        <h3>Como sei se minha Tv é compatível com 4k</h3>
+                    <div className="query">
+                        <div className="title">
+                            <h3>Como sei se minha Tv é compatível com 4k</h3>
+                            <a href={arrowImg}>
+                                <img src={arrowImg} alt="Arrow" />
+                            </a>
+                        </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </section>

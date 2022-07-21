@@ -1,4 +1,5 @@
 body {
+    padding: 0 1.5rem;
     .content {
         display: flex;
         align-items: center;
@@ -92,15 +93,24 @@ body {
             }
         }
 
-        div {
+        .query {
             width: 100%;
             border-bottom: 1px solid var(--gray-light);
-            margin-bottom: 3rem;
+            margin: 0 0 3rem 0;
+
+            .title {
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: row;
+            }
 
             a {
                 display: inline-flex;
-                align-items: center;
+                align-items: start;
                 justify-content: center;
+                margin-top: 7px;
+                margin-left: auto;
                 img {
                     width: 20px;
                     height: 10px;
@@ -118,3 +128,12 @@ body {
         }
     }
 }
+
+// max-width: 80%;
+// height: 5rem;
+// margin: 0 auto;
+// padding: 0 2rem;
+// display: flex;
+// align-items: center;
+
+// margin-left: auto;
