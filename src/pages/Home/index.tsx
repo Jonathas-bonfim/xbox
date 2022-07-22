@@ -34,7 +34,7 @@ export function Home() {
                 <section className='content'>
                     <h1>Xbox series X</h1>
                     <p>Pedido antecipado</p>
-                    <img src={luzVerdeImg} alt="Luz verde" />
+                    <img src={luzVerdeImg} className='background-green' alt="Luz verde" />
                     <img src={xboxImg} alt="Imagem Xbox" />
                 </section>
 

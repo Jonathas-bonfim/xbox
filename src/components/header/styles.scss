@@ -4,20 +4,28 @@ header {
     justify-content: space-between;
     flex-direction: row;
 
-
     font-size: 1rem;
-
     height: 5rem;
     max-width: 1280px;
 
     margin: 0 auto;
     padding: 0.5rem 1rem;
 
-    a {
+    img {
+        width: 205px;
+        height:52px;
+    }
+
+    nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: row; 
+        gap: 48px; 
+    }
+
+    a {
+        display: flex;
         gap: 1.5rem;
         // margin-left: 2.5rem;
         // & + a {
@@ -37,6 +45,30 @@ header {
         transition: filter 0.2s;
         &:hover{
             filter: brightness(0.8);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        margin-bottom: 5rem;
+
+        img {
+            width: 70px;
+            height: 20px;
+        }
+        
+        a {
+            font-size: 0.75rem;
+            margin-bottom: 2.5rem;
+        }
+
+        button {
+            width: 23rem;
         }
     }
 }
