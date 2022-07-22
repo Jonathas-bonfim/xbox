@@ -3,7 +3,6 @@ import logoXboxIMG from '../../assets/images/logo-xbox.svg';
 
 export function Header() {
     return (
-
         <header>
             <img src={logoXboxIMG} alt="Logo xbox" />
             <nav>

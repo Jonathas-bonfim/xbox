@@ -6,12 +6,25 @@ import farcryImg from '../../assets/images/farcry.png';
 import forzaImg from '../../assets/images/forza.png';
 import fifaImg from '../../assets/images/fifa.png';
 import minecraftImg from '../../assets/images/minecraft.png';
-import arrowImg from '../../assets/images/arrow.png';
-import arrowActiveImg from '../../assets/images/arrow-active.png';
 
 import { Header } from '../../components/header';
+import { QuestionProps, Questions } from '../../components/Questions';
+
 
 export function Home() {
+    const data: QuestionProps[] = [
+        {
+            question: 'Meus jogos anteriores do Xbox vão funcionar no Xbox séries X?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit1.'
+        },
+        {
+            question: 'O que está incluído no Xbox series x?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit2.'
+        }, {
+            question: 'Como sei se minha Tv é compatível com 4k?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit3.'
+        },
+    ];
     return (
         <>
             <Header />
@@ -45,34 +58,15 @@ export function Home() {
                 </section>
 
                 <section className="questions">
+
                     <h1>Perguntas <span>frequentes</span></h1>
-                    <div className="query">
-                        <div className="title">
-                            <h3>Meus jogos anteriores do Xbox vão funcionar no Xbox séries X?</h3>
-                            <a href={arrowImg}>
-                                <img src={arrowImg} alt="Arrow" />
-                            </a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit1.</p>
-                    </div>
-                    <div className="query">
-                        <div className="title">
-                            <h3>O que está incluído no Xbox series x?</h3>
-                            <a href={arrowImg}>
-                                <img src={arrowImg} alt="Arrow" />
-                            </a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div className="query">
-                        <div className="title">
-                            <h3>Como sei se minha Tv é compatível com 4k</h3>
-                            <a href={arrowImg}>
-                                <img src={arrowImg} alt="Arrow" />
-                            </a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                    {
+                        data.map((item) => {
+                            return (
+                                <Questions question={item.question} answer={item.answer} key={item.question} />
+                            )
+                        })
+                    }
                 </section>
             </body>
         </>

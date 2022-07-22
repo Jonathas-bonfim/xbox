@@ -1,5 +1,8 @@
 body {
+    width: 100%;
     padding: 0 1.5rem;
+    margin: 0 auto;
+    overflow-x: hidden;
     .content {
         display: flex;
         align-items: center;
@@ -129,11 +132,29 @@ body {
     }
 }
 
-// max-width: 80%;
-// height: 5rem;
-// margin: 0 auto;
-// padding: 0 2rem;
-// display: flex;
-// align-items: center;
+@media screen and (max-width: 1024px) {
+    body {
+        .content{
+            img {
+                margin-top: 3rem;
+                max-width: 900px;
+            }
+        }
 
-// margin-left: auto;
+        .container {
+            div {
+                text-align: center;
+                h1 {
+                    font-size: 4rem;
+                }
+            };
+
+            p {
+                margin: 2rem auto 0 auto;
+            }
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+}

@@ -2,6 +2,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+
 
     font-size: 1rem;
 
@@ -12,10 +14,15 @@ header {
     padding: 0.5rem 1rem;
 
     a {
-        margin-left: 2.5rem;
-        & + a {
-            margin-left: 1.5rem;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1.5rem;
+        // margin-left: 2.5rem;
+        // & + a {
+        //     margin-left: 1.5rem;
+        // }
 
         &:hover{
             color: var(--green);
