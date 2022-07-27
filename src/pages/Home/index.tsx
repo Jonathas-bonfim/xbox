@@ -23,6 +23,9 @@ export function Home() {
         }, {
             question: 'Como sei se minha Tv é compatível com 4k?',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit3.'
+        }, {
+            question: 'Como sei se minha Tv é compatível com 8k?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit3.'
         },
     ];
     return (
